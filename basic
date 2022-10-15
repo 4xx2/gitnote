@@ -1,0 +1,16 @@
+git init	#初始化，即让git帮我们管理当前文件夹
+git status	#检测当前目录下文件的状态
+			#红色：新增文件/修改了的文件
+			#绿色：git已经管理起来了
+			#生成了版本
+git add	# 添加管理文件 
+git add .	# 管理文件夹所有文件
+git commit -m ‘描述信息’	#生成一个版本
+git log 	# 显示版本变化日志
+
+个人信息的配置：
+		git config --global user.email "you@example.com"
+		git config --global user.name "Your Name"
+git的三个区域：工作区；暂存区；版本库。
+	add：把新增文件或者修改文件转移到暂存区
+	commit：把暂存区生成版本

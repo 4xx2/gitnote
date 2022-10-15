@@ -1,0 +1,14 @@
+git reset --hard +版本号	#回滚到之前
+git log	#先用这个命令查看之前的版本号
+
+git reflog
+git reset --hard +版本号	#回滚到之后的版本
+
+git checkout -- 文件名	#重置修改的文本，使其变回已有的版本
+		#工作区修改的文件变回 没有修改的状态
+
+git reset HEAD 文件名	#将这个文件从暂存区返回工作区
+
+git reset --soft 版本号	#从版本库变回之前的版本暂存状态
+
+
