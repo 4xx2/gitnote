@@ -1,3 +1,6 @@
+rebase（变基） 和merge差不多，可以保持提交记录的简洁
+	git rebase 分支
+
 多个版本记录合并成一个记录：
 	git rebase -i 版本号	#从当前版本到 版本号 之间 所有版本合并一个版本
 	git rebase -i HEAD~3	#当前版本和之前总计 3个版本合并成一个版本
@@ -8,6 +11,11 @@
 想把一个多余的分支合并到主分支：
 	 git log --graph	#以图形方式显示log记录
 	 git log --graph --pretty=format:"%h %s"	#格式化显示log记录
+	 git rebase master	#把master分支的东西合并到当前分支
+	 git checkout master
+	 git merge dev		#切换到master，并且合并dev到master
 	 
 
+解决冲突：
+	git --continue		#解决了冲突后，继续执行
 

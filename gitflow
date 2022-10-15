@@ -1,0 +1,5 @@
+git tag -a v1 -m '描述信息'	#给目前的版本打个标签
+git push origin --tags		#上传到github
+
+git checkout -b 分支名		#从当前分支上建立新的分支
+

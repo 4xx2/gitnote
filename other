@@ -1,0 +1,30 @@
+配置文件位置：
+.git/config	#本地项目配置文件;只配置当前这个项目
+	git config --local ...	
+~/.gitconfig	#全局配置文件；所有git项目通用
+	git config --global ...
+/etc/.gitconfig	#系统配置文件；需要root权限
+	git config --system ...
+
+应用场景：
+	设置用户名和email；
+	git remote add origin 地址	#默认添加到本地配置文件中（--local）
+
+
+ssh免密登录：
+	ssh-keygen -r rsa	#生成一对公钥私钥；默认放在~/.ssh
+	#拷贝公钥内容，并设置到github中
+	git remote add origin 地址	#在git本地中配置ssh地址
+	git push origin master	#以后使用
+
+git 忽略文件
+	.gitignore	
+	#创建一个.gitignore文件，将不希望git管理的文件输入其中，就可以将这些文件忽略
+	#可以使用通配符：如 *.py;
+	#可以使用file/，忽略一整个文件夹；
+	#！文件，排除这个文件，这个文件不忽略。
+
+任务管理
+	issues	#提问题，可以指派一个人，可以打标签
+	wiki	#项目相关的信息制作一个wiki
+
